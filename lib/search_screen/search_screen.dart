@@ -54,9 +54,8 @@ class SearchScreen extends StatelessWidget {
                     return SearchTextField(
                         onSubmitted: state.isValid
                             ? () {
-                                context
-                                    .read<SearchBloc>()
-                                    .add(SearchSubmittedEvent(state.value));
+                                context.read<SearchBloc>().add(
+                                    SearchSubmittedEvent(state.value.trim()));
                               }
                             : null,
                         onChanged: context.read<ValidationCubit>().onChanged,
