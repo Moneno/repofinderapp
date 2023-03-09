@@ -3,7 +3,7 @@ import 'package:repofinderapp/bloc/favorite_repositories_bloc/favorite_repositor
 import 'package:repofinderapp/bloc/search_bloc/search_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:repofinderapp/bloc/webview_bloc/webview_bloc.dart';
-import 'package:repofinderapp/favorite_repositories_screen/favorite_repositories_screen.dart';
+import 'package:repofinderapp/favorite_repositories_screen.dart/favorite_repositories_screen.dart';
 import 'package:repofinderapp/webview_screen/webview_screen.dart';
 import 'package:repofinderapp/widgets/repository_list_item.dart';
 

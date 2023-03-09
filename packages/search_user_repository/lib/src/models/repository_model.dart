@@ -1,20 +1,9 @@
-import 'package:hive/hive.dart';
-
-part 'repository_model.g.dart';
-
-@HiveType(typeId: 0)
 class GitRepository {
-  @HiveField(0)
   final String? username;
-  @HiveField(1)
   final String? stargazers;
-  @HiveField(2)
   final String? watchers;
-  @HiveField(3)
   final String? reposName;
-  @HiveField(4)
   final String? userImage;
-  @HiveField(5)
   final String? reposUrl;
 
   GitRepository({

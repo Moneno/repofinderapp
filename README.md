@@ -1,3 +1,3 @@
 # repofinderapp
 
-First practive app on Flutter
+First practiсe app on Flutter

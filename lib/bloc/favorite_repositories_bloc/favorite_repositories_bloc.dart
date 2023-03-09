@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:search_user_repository/search_user_repository.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:storage_user_repository/storage_user_repository.dart';
 
 part 'favorite_repositories_event.dart';
@@ -73,7 +74,7 @@ class FavoriteRepositoriesBloc
     emit(state.copyWith(status: FavoriteRepositoriesStatus.loading));
     repositories.clear();
     reposUrls.clear();
-    _storageUserRepository.clearRepositoriesFromLocalStorage();
+    _storageUserRepository.setRepositoriesToLocalStorage(repositories);
     emit(state.copyWith(
       reposUrls: reposUrls,
       repositories: repositories,
